@@ -6,68 +6,90 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/mojito
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/mojito/proprietary/framework/tcmclient.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/tcmclient.jar \
-    vendor/xiaomi/mojito/proprietary/system/system/bin/cameraserver:$(TARGET_COPY_OUT_SYSTEM)/system/bin/cameraserver \
-    vendor/xiaomi/mojito/proprietary/system/system/etc/init/cameraserver.rc:$(TARGET_COPY_OUT_SYSTEM)/system/etc/init/cameraserver.rc \
+    vendor/xiaomi/mojito/proprietary/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
+    vendor/xiaomi/mojito/proprietary/etc/sysconfig/qti_whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/qti_whitelist.xml \
+    vendor/xiaomi/mojito/proprietary/product/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vendor.qti.hardware.data.connection-V1.0-java.xml \
+    vendor/xiaomi/mojito/proprietary/product/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/vendor.qti.hardware.data.connection-V1.1-java.xml \
     vendor/xiaomi/mojito/proprietary/system_ext/bin/dpmd:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/dpmd \
     vendor/xiaomi/mojito/proprietary/system_ext/bin/wfdservice:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/wfdservice \
     vendor/xiaomi/mojito/proprietary/system_ext/etc/dpm/dpm.conf:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/dpm/dpm.conf \
+    vendor/xiaomi/mojito/proprietary/system_ext/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/com.qualcomm.qti.sigma_miracast@1.0-service.rc \
     vendor/xiaomi/mojito/proprietary/system_ext/etc/init/dpmd.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/dpmd.rc \
     vendor/xiaomi/mojito/proprietary/system_ext/etc/init/wfdservice.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/wfdservice.rc \
-    vendor/xiaomi/mojito/proprietary/system_ext/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/audiosphere.xml \
     vendor/xiaomi/mojito/proprietary/system_ext/etc/permissions/com.qti.dpmframework.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.dpmframework.xml \
+    vendor/xiaomi/mojito/proprietary/system_ext/etc/permissions/com.qti.location.sdk.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qti.location.sdk.xml \
+    vendor/xiaomi/mojito/proprietary/system_ext/etc/permissions/com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.location.xml \
+    vendor/xiaomi/mojito/proprietary/system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml \
+    vendor/xiaomi/mojito/proprietary/system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml \
+    vendor/xiaomi/mojito/proprietary/system_ext/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml \
+    vendor/xiaomi/mojito/proprietary/system_ext/etc/permissions/com.qualcomm.qti.imscmservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.qualcomm.qti.imscmservice.xml \
     vendor/xiaomi/mojito/proprietary/system_ext/etc/permissions/dpmapi.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/dpmapi.xml \
+    vendor/xiaomi/mojito/proprietary/system_ext/etc/permissions/embms.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/embms.xml \
+    vendor/xiaomi/mojito/proprietary/system_ext/etc/permissions/izat.xt.srv.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/izat.xt.srv.xml \
+    vendor/xiaomi/mojito/proprietary/system_ext/etc/permissions/privapp-permissions-com.qualcomm.location.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-com.qualcomm.location.xml \
     vendor/xiaomi/mojito/proprietary/system_ext/etc/permissions/qcrilhook.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qcrilhook.xml \
+    vendor/xiaomi/mojito/proprietary/system_ext/etc/permissions/qti_libpermissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_libpermissions.xml \
     vendor/xiaomi/mojito/proprietary/system_ext/etc/permissions/qti_permissions.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/qti_permissions.xml \
+    vendor/xiaomi/mojito/proprietary/system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml \
     vendor/xiaomi/mojito/proprietary/system_ext/etc/permissions/telephonyservice.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/telephonyservice.xml \
     vendor/xiaomi/mojito/proprietary/system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml \
-    vendor/xiaomi/mojito/proprietary/system_ext/etc/qvr/cfg/339/0/65536/mtp855.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/339/0/65536/mtp855.txt \
-    vendor/xiaomi/mojito/proprietary/system_ext/etc/qvr/cfg/339/0/65536/mtp855_6dof_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/339/0/65536/mtp855_6dof_config.xml \
-    vendor/xiaomi/mojito/proprietary/system_ext/etc/qvr/cfg/341/2/65536/svr845.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/341/2/65536/svr845.txt \
-    vendor/xiaomi/mojito/proprietary/system_ext/etc/qvr/cfg/356/0/65536/mtp865.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/0/65536/mtp865.txt \
-    vendor/xiaomi/mojito/proprietary/system_ext/etc/qvr/cfg/356/0/65536/mtp865_6dof_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/0/65536/mtp865_6dof_config.xml \
-    vendor/xiaomi/mojito/proprietary/system_ext/etc/qvr/cfg/356/1/131072/morpheus.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/1/131072/morpheus.txt \
-    vendor/xiaomi/mojito/proprietary/system_ext/etc/qvr/cfg/356/1/131072/morpheus_6dof_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/1/131072/morpheus_6dof_config.xml \
-    vendor/xiaomi/mojito/proprietary/system_ext/etc/qvr/cfg/356/1/65536/trinity.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/1/65536/trinity.txt \
-    vendor/xiaomi/mojito/proprietary/system_ext/etc/qvr/cfg/356/1/65536/trinity_6dof_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/356/1/65536/trinity_6dof_config.xml \
-    vendor/xiaomi/mojito/proprietary/system_ext/etc/qvr/cfg/415/0/65536/mtplahaina.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/415/0/65536/mtplahaina.txt \
-    vendor/xiaomi/mojito/proprietary/system_ext/etc/qvr/cfg/415/0/65536/mtplahaina_6dof_config.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/cfg/415/0/65536/mtplahaina_6dof_config.xml \
-    vendor/xiaomi/mojito/proprietary/system_ext/etc/qvr/qvr_hid_device_list.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/qvr_hid_device_list.txt \
-    vendor/xiaomi/mojito/proprietary/system_ext/etc/qvr/qvrservice_config.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/qvr/qvrservice_config.txt \
-    vendor/xiaomi/mojito/proprietary/system_ext/etc/seccomp_policy/qvr@2.0.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/qvr@2.0.policy \
+    vendor/xiaomi/mojito/proprietary/system_ext/etc/public.libraries-qti.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-qti.txt \
     vendor/xiaomi/mojito/proprietary/system_ext/etc/seccomp_policy/wfdservice.policy:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/seccomp_policy/wfdservice.policy \
+    vendor/xiaomi/mojito/proprietary/system_ext/etc/sysconfig/qti_whitelist_system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/qti_whitelist_system_ext.xml \
     vendor/xiaomi/mojito/proprietary/system_ext/etc/wfdconfigsink.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/wfdconfigsink.xml \
-    vendor/xiaomi/mojito/proprietary/system_ext/framework/audiosphere.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/audiosphere.jar \
-    vendor/xiaomi/mojito/proprietary/system_ext/framework/com.qti.dpmframework.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/com.qti.dpmframework.jar \
-    vendor/xiaomi/mojito/proprietary/system_ext/framework/dpmapi.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/dpmapi.jar \
-    vendor/xiaomi/mojito/proprietary/system_ext/framework/qcrilhook.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/qcrilhook.jar \
-    vendor/xiaomi/mojito/proprietary/system_ext/framework/qti-telephony-common.jar:$(TARGET_COPY_OUT_SYSTEM_EXT)/framework/qti-telephony-common.jar \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib/libcvp_common_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libcvp_common_system.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib/libcvpcpuRev_skel_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libcvpcpuRev_skel_system.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib/libeye_tracking_dsp_sample_stub.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libeye_tracking_dsp_sample_stub.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.ant@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.imscmservice@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.imscmservice@2.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.imscmservice@2.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/com.qualcomm.qti.imscmservice@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.imscmservice@2.2.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/com.qualcomm.qti.uceservice@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.uceservice@2.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/com.qualcomm.qti.uceservice@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.uceservice@2.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/com.qualcomm.qti.uceservice@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.uceservice@2.2.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/com.qualcomm.qti.wifidisplayhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.qualcomm.qti.wifidisplayhal@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.quicinc.cne.api@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/com.quicinc.cne.api@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.quicinc.cne.api@1.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/com.quicinc.cne.constants@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.quicinc.cne.constants@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/com.quicinc.cne.constants@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.quicinc.cne.constants@2.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/com.quicinc.cne.constants@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/com.quicinc.cne.constants@2.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/fm_helium.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/lib-imsvideocodec.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/lib-imsvt.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/lib-imsvtextutils.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/lib-imsvtutils.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdiag_system.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/libdpmctmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdpmctmgr.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/libdpmfdmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdpmfdmgr.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/libdpmframework.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdpmframework.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/libdpmtcm.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libdpmtcm.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libfm-hci.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libimscamera_jni.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libimsmedia_jni.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/libmink-sock-native-api.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmink-sock-native-api.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/libminksocket_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libminksocket_system.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/libmiracastsystem.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmiracastsystem.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmosal.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmparser_lite.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmrtpdecoder.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libmmrtpencoder.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib/libqvr_cam_cdsp_driver_stub.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvr_cam_cdsp_driver_stub.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib/libqvr_cdsp_driver_stub.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvr_cdsp_driver_stub.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib/libqvr_eyetracking_plugin.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvr_eyetracking_plugin.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib/libqvrcamera_client.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvrcamera_client.qti.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib/libqvrservice.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvrservice.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib/libqvrservice_client.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvrservice_client.qti.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib/libqvrservice_ov7251_hvx_tuning.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvrservice_ov7251_hvx_tuning.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib/libqvrservice_ov9282_hvx_tuning.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvrservice_ov9282_hvx_tuning.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib/libqvrservice_v4l_ov7251_hvx_tuning.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqvrservice_v4l_ov7251_hvx_tuning.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib/libseccam-ipc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libseccam-ipc.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib/libseccam.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libseccam.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib/libseccamservice.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libseccamservice.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/libqcc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqcc.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/libqcc_file_agent_sys.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqcc_file_agent_sys.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/libqmi_cci_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqmi_cci_system.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/libqmi_encdec_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libqmi_encdec_system.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libsdm-disp-apis.qti.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/libsecureui_svcsock_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libsecureui_svcsock_system.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/libsecureuisvc_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libsecureuisvc_jni.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/libwfdaac.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdaac.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib/libwfdavenhancements.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdavenhancements.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdclient.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib/libwfdcommonutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdcommonutils.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib/libwfdconfigutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdconfigutils.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib/libwfddisplayconfig.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfddisplayconfig.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib/libwfdmminterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdmminterface.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib/libwfdmmsink.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdmmsink.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib/libwfdmmsrc_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdmmsrc_system.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/libwfdnative.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdnative.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib/libwfdrtsp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdrtsp.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib/libwfdservice.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdservice.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib/libwfdsinksm.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfdsinksm.so \
@@ -76,18 +98,96 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/system_ext/lib/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsinkinterface.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsrc.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/libwfduibcsrcinterface.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.cvp@1.0-adapter-helper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.cvp@1.0-adapter-helper.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.cvp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.cvp@1.0.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.seccam@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.seccam@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.color@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.color@1.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.color@1.2.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.color@1.3.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.display.postproc@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.data.factory@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.factory@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.factory@2.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.factory@2.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.data.mwqem@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.mwqem@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.slm@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.diaghal@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.data.cne.internal.server@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.cne.internal.server@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.data.connection@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.connection@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.data.connection@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.connection@1.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.data.dynamicdds@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.dynamicdds@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.data.iwlan@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.iwlan@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.qmi@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.dsp@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.fingerprint@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.fm@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.qccsyshal@1.0-halimpl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qccsyshal@1.0-halimpl.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qccsyshal@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.qccvndhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qccvndhal@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qseecom@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.qteeconnector@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.am@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.radio.ims@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.ims@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.radio.ims@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.ims@1.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.radio.ims@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.ims@1.2.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.radio.ims@1.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.ims@1.3.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.radio.ims@1.4.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.ims@1.4.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.radio.ims@1.5.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.ims@1.5.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.radio.ims@1.6.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.ims@1.6.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.radio.lpa@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.lpa@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.radio.lpa@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.lpa@1.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.radio.qtiradio@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.qtiradio@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.radio.qtiradio@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.qtiradio@2.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.radio.qtiradio@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.qtiradio@2.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.radio.qtiradio@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.qtiradio@2.2.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.radio.qtiradio@2.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.qtiradio@2.3.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.radio.qtiradio@2.4.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.qtiradio@2.4.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.radio.uim@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.uim@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.radio.uim@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.uim@1.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.radio.uim@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.uim@1.2.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.radio.uim_remote_client@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.uim_remote_client@1.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.radio.uim_remote_client@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.uim_remote_client@1.2.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.scve.objecttracker@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.scve.objecttracker@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.scve.panorama@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.scve.panorama@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.sigma_miracast@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.sigma_miracast@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.tui_comm@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.vpp@1.1.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.callcapability@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.callinfo@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.ims.factory@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.factory@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.ims.factory@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.factory@1.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.rcsconfig@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.rcsconfig@1.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.ims.rcsconfig@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.rcsconfig@2.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.ims.rcsconfig@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.rcsconfig@2.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.imsrtpservice@3.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/com.qualcomm.qti.ant@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.ant@1.0.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.imscmservice@2.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.imscmservice@2.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/com.qualcomm.qti.imscmservice@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.imscmservice@2.2.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/com.qualcomm.qti.uceservice@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.uceservice@2.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/com.qualcomm.qti.uceservice@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.uceservice@2.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/com.qualcomm.qti.uceservice@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.qualcomm.qti.uceservice@2.2.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/com.quicinc.cne.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.quicinc.cne.api@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/com.quicinc.cne.api@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.quicinc.cne.api@1.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/com.quicinc.cne.constants@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.quicinc.cne.constants@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/com.quicinc.cne.constants@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.quicinc.cne.constants@2.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/com.quicinc.cne.constants@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/com.quicinc.cne.constants@2.1.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib64/fm_helium.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/fm_helium.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/hw/vendor.qti.hardware.sigma_miracast@1.0-impl.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib64/lib-imsvideocodec.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvideocodec.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib64/lib-imsvt.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvt.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib64/lib-imsvtextutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtextutils.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib64/lib-imsvtutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/lib-imsvtutils.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib64/libcvp_common_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcvp_common_system.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib64/libcvpcpuRev_skel_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libcvpcpuRev_skel_system.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib64/libdiag_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdiag_system.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib64/libdpmctmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmctmgr.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib64/libdpmfdmgr.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libdpmfdmgr.so \
@@ -96,18 +196,18 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/system_ext/lib64/libfm-hci.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libfm-hci.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib64/libimscamera_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimscamera_jni.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib64/libimsmedia_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsmedia_jni.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/libmink-sock-native-api.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmink-sock-native-api.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/libminksocket_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libminksocket_system.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/libmiracastsystem.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmiracastsystem.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib64/libmmosal.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmosal.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib64/libmmparser_lite.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmparser_lite.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib64/libmmrtpdecoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpdecoder.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib64/libmmrtpencoder.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libmmrtpencoder.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib64/libqvrcamera_client.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqvrcamera_client.qti.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib64/libqvrservice_client.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqvrservice_client.qti.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib64/libqvrservice_ov7251_hvx_tuning.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqvrservice_ov7251_hvx_tuning.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib64/libqvrservice_ov9282_hvx_tuning.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqvrservice_ov9282_hvx_tuning.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib64/libqvrservice_v4l_ov7251_hvx_tuning.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqvrservice_v4l_ov7251_hvx_tuning.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib64/libseccam-ipc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libseccam-ipc.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib64/libseccam.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libseccam.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib64/libseccamservice.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libseccamservice.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/libqcc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqcc.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/libqcc_file_agent_sys.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqcc_file_agent_sys.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/libqmi_cci_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqmi_cci_system.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/libqmi_encdec_system.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libqmi_encdec_system.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/libsdm-disp-apis.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libsdm-disp-apis.qti.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib64/libwfdclient.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdclient.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib64/libwfdcommonutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdcommonutils.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib64/libwfdconfigutils.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfdconfigutils.so \
@@ -122,56 +222,162 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/system_ext/lib64/libwfduibcsinkinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsinkinterface.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib64/libwfduibcsrc.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsrc.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib64/libwfduibcsrcinterface.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libwfduibcsrcinterface.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.color@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.color@1.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.color@1.2.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.color@1.3.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.display.postproc@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.data.factory@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.factory@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.factory@2.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.factory@2.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.data.mwqem@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.mwqem@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.slm@1.0.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.diaghal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.diaghal@1.0.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.cvp@1.0-adapter-helper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.cvp@1.0-adapter-helper.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.cvp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.cvp@1.0.so \
-    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.seccam@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.seccam@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.audiohalext@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.audiohalext@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.data.connection@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.connection@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.data.connection@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.connection@1.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.dynamicdds@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.data.iwlan@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.iwlan@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.qmi@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.dsp@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.fingerprint@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.fm@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0-halimpl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qccsyshal@1.0-halimpl.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qccsyshal@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.qccvndhal@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qccvndhal@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qseecom@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.am@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.2.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.3.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.4.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.4.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.5.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.5.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.radio.ims@1.6.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.ims@1.6.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.radio.lpa@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.lpa@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.radio.lpa@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.lpa@1.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.qtiradio@2.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.qtiradio@2.2.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.qtiradio@2.3.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.qtiradio@2.4.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.radio.uim@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.uim@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.radio.uim@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.uim@1.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.radio.uim@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.uim@1.2.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.scve.objecttracker@1.0-adapter-helper.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.scve.panorama@1.0-adapter-helper.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.scve.panorama@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.scve.panorama@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.sigma_miracast@1.0-halimpl.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.sigma_miracast@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.sigma_miracast@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.tui_comm@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.vpp@1.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.wifi.keystore@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.wifi.keystore@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.callcapability@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.callinfo@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.ims.factory@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.factory@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.ims.factory@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.factory@1.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsconfig@1.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsconfig@1.1.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.ims.rcsconfig@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsconfig@2.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.ims.rcsconfig@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.rcsconfig@2.1.so \
     vendor/xiaomi/mojito/proprietary/system_ext/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.imsrtpservice@3.0.so \
+    vendor/xiaomi/mojito/proprietary/system_ext/priv-app/WfdService/lib/arm64/libwfdnative.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/priv-app/WfdService/lib/arm64/libwfdnative.so \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/ATFWD-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ATFWD-daemon \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/SoterProvisioningTool:$(TARGET_COPY_OUT_VENDOR)/bin/SoterProvisioningTool \
     vendor/xiaomi/mojito/proprietary/vendor/bin/adpl:$(TARGET_COPY_OUT_VENDOR)/bin/adpl \
     vendor/xiaomi/mojito/proprietary/vendor/bin/adsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/adsprpcd \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/batterysecret:$(TARGET_COPY_OUT_VENDOR)/bin/batterysecret \
     vendor/xiaomi/mojito/proprietary/vendor/bin/cdsprpcd:$(TARGET_COPY_OUT_VENDOR)/bin/cdsprpcd \
     vendor/xiaomi/mojito/proprietary/vendor/bin/cnd:$(TARGET_COPY_OUT_VENDOR)/bin/cnd \
     vendor/xiaomi/mojito/proprietary/vendor/bin/cnss-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/cnss-daemon \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/cnss_diag:$(TARGET_COPY_OUT_VENDOR)/bin/cnss_diag \
     vendor/xiaomi/mojito/proprietary/vendor/bin/dpmQmiMgr:$(TARGET_COPY_OUT_VENDOR)/bin/dpmQmiMgr \
     vendor/xiaomi/mojito/proprietary/vendor/bin/dspservice:$(TARGET_COPY_OUT_VENDOR)/bin/dspservice \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/fm_qsoc_patches:$(TARGET_COPY_OUT_VENDOR)/bin/fm_qsoc_patches \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/garden_app:$(TARGET_COPY_OUT_VENDOR)/bin/garden_app \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/hdcp1prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp1prov \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/hdcp2p2prov:$(TARGET_COPY_OUT_VENDOR)/bin/hdcp2p2prov \
     vendor/xiaomi/mojito/proprietary/vendor/bin/hvdcp_opti:$(TARGET_COPY_OUT_VENDOR)/bin/hvdcp_opti \
     vendor/xiaomi/mojito/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.0-service-qti \
     vendor/xiaomi/mojito/proprietary/vendor/bin/hw/android.hardware.drm@1.3-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.3-service.widevine \
     vendor/xiaomi/mojito/proprietary/vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gatekeeper@1.0-service-qti \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/hw/android.hardware.gnss@2.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss@2.1-service-qti \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/hw/android.hardware.keymaster@3.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@3.0-service-qti \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/hw/android.hardware.keymaster@4.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.0-service-qti \
     vendor/xiaomi/mojito/proprietary/vendor/bin/hw/android.hardware.keymaster@4.1-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.keymaster@4.1-service-qti \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/hw/android.hardware.lights-service.qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.lights-service.qti \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.neuralnetworks@1.3-service-qti \
     vendor/xiaomi/mojito/proprietary/vendor/bin/hw/qcrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/qcrild \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/hw/vendor.qti.esepowermanager@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.esepowermanager@1.1-service \
     vendor/xiaomi/mojito/proprietary/vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.alarm@1.0-service \
     vendor/xiaomi/mojito/proprietary/vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qccvndhal@1.0-service \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qseecom@1.0-service \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service \
     vendor/xiaomi/mojito/proprietary/vendor/bin/hw/vendor.qti.hardware.soter@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.soter@1.0-service \
-    vendor/xiaomi/mojito/proprietary/vendor/bin/hw/vendor.qti.media.c2@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.media.c2@1.0-service \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor/xiaomi/mojito/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
     vendor/xiaomi/mojito/proprietary/vendor/bin/imsdatadaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdatadaemon \
     vendor/xiaomi/mojito/proprietary/vendor/bin/imsqmidaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsqmidaemon \
     vendor/xiaomi/mojito/proprietary/vendor/bin/imsrcsd:$(TARGET_COPY_OUT_VENDOR)/bin/imsrcsd \
     vendor/xiaomi/mojito/proprietary/vendor/bin/irsc_util:$(TARGET_COPY_OUT_VENDOR)/bin/irsc_util \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/iwpriv:$(TARGET_COPY_OUT_VENDOR)/bin/iwpriv \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/ks:$(TARGET_COPY_OUT_VENDOR)/bin/ks \
     vendor/xiaomi/mojito/proprietary/vendor/bin/loc_launcher:$(TARGET_COPY_OUT_VENDOR)/bin/loc_launcher \
     vendor/xiaomi/mojito/proprietary/vendor/bin/lowi-server:$(TARGET_COPY_OUT_VENDOR)/bin/lowi-server \
     vendor/xiaomi/mojito/proprietary/vendor/bin/mi_thermald:$(TARGET_COPY_OUT_VENDOR)/bin/mi_thermald \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/mlipayd@1.1:$(TARGET_COPY_OUT_VENDOR)/bin/mlipayd@1.1 \
     vendor/xiaomi/mojito/proprietary/vendor/bin/msm_irqbalance:$(TARGET_COPY_OUT_VENDOR)/bin/msm_irqbalance \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/mtd@1.2:$(TARGET_COPY_OUT_VENDOR)/bin/mtd@1.2 \
     vendor/xiaomi/mojito/proprietary/vendor/bin/netmgrd:$(TARGET_COPY_OUT_VENDOR)/bin/netmgrd \
     vendor/xiaomi/mojito/proprietary/vendor/bin/nv_mac:$(TARGET_COPY_OUT_VENDOR)/bin/nv_mac \
     vendor/xiaomi/mojito/proprietary/vendor/bin/pd-mapper:$(TARGET_COPY_OUT_VENDOR)/bin/pd-mapper \
     vendor/xiaomi/mojito/proprietary/vendor/bin/pm-proxy:$(TARGET_COPY_OUT_VENDOR)/bin/pm-proxy \
     vendor/xiaomi/mojito/proprietary/vendor/bin/pm-service:$(TARGET_COPY_OUT_VENDOR)/bin/pm-service \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/port-bridge:$(TARGET_COPY_OUT_VENDOR)/bin/port-bridge \
     vendor/xiaomi/mojito/proprietary/vendor/bin/power_off_alarm:$(TARGET_COPY_OUT_VENDOR)/bin/power_off_alarm \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/ppd:$(TARGET_COPY_OUT_VENDOR)/bin/ppd \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/qrtr-cfg:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-cfg \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/qrtr-lookup:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-lookup \
     vendor/xiaomi/mojito/proprietary/vendor/bin/qrtr-ns:$(TARGET_COPY_OUT_VENDOR)/bin/qrtr-ns \
     vendor/xiaomi/mojito/proprietary/vendor/bin/qseecomd:$(TARGET_COPY_OUT_VENDOR)/bin/qseecomd \
     vendor/xiaomi/mojito/proprietary/vendor/bin/qti:$(TARGET_COPY_OUT_VENDOR)/bin/qti \
     vendor/xiaomi/mojito/proprietary/vendor/bin/rmt_storage:$(TARGET_COPY_OUT_VENDOR)/bin/rmt_storage \
     vendor/xiaomi/mojito/proprietary/vendor/bin/sensors.qti:$(TARGET_COPY_OUT_VENDOR)/bin/sensors.qti \
     vendor/xiaomi/mojito/proprietary/vendor/bin/slim_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/slim_daemon \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/ssgtzd:$(TARGET_COPY_OUT_VENDOR)/bin/ssgtzd \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/ssr_diag:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_diag \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/ssr_setup:$(TARGET_COPY_OUT_VENDOR)/bin/ssr_setup \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/subsystem_ramdump:$(TARGET_COPY_OUT_VENDOR)/bin/subsystem_ramdump \
     vendor/xiaomi/mojito/proprietary/vendor/bin/tftp_server:$(TARGET_COPY_OUT_VENDOR)/bin/tftp_server \
     vendor/xiaomi/mojito/proprietary/vendor/bin/thermal-engine:$(TARGET_COPY_OUT_VENDOR)/bin/thermal-engine \
     vendor/xiaomi/mojito/proprietary/vendor/bin/time_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/time_daemon \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/vendor.qti.hardware.soter@1.0-provision:$(TARGET_COPY_OUT_VENDOR)/bin/vendor.qti.hardware.soter@1.0-provision \
     vendor/xiaomi/mojito/proprietary/vendor/bin/vppservice:$(TARGET_COPY_OUT_VENDOR)/bin/vppservice \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/wfdhdcphalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wfdhdcphalservice \
     vendor/xiaomi/mojito/proprietary/vendor/bin/wfdvndservice:$(TARGET_COPY_OUT_VENDOR)/bin/wfdvndservice \
     vendor/xiaomi/mojito/proprietary/vendor/bin/wifidisplayhalservice:$(TARGET_COPY_OUT_VENDOR)/bin/wifidisplayhalservice \
     vendor/xiaomi/mojito/proprietary/vendor/bin/xtra-daemon:$(TARGET_COPY_OUT_VENDOR)/bin/xtra-daemon \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/xtwifi-client:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-client \
+    vendor/xiaomi/mojito/proprietary/vendor/bin/xtwifi-inet-agent:$(TARGET_COPY_OUT_VENDOR)/bin/xtwifi-inet-agent \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/Diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/Diag.cfg \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/K7A/para_ini_cal_w_d_0.bin:$(TARGET_COPY_OUT_VENDOR)/etc/K7A/para_ini_cal_w_d_0.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/K7A/para_ini_cal_w_uw_1.bin:$(TARGET_COPY_OUT_VENDOR)/etc/K7A/para_ini_cal_w_uw_1.bin \
     vendor/xiaomi/mojito/proprietary/vendor/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/IDP_Bluetooth_cal.acdb \
     vendor/xiaomi/mojito/proprietary/vendor/etc/acdbdata/IDP/IDP_Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/IDP_Codec_cal.acdb \
     vendor/xiaomi/mojito/proprietary/vendor/etc/acdbdata/IDP/IDP_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/IDP_General_cal.acdb \
@@ -190,6 +396,15 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/etc/acdbdata/IDP/india/INDIA_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/india/INDIA_Headset_cal.acdb \
     vendor/xiaomi/mojito/proprietary/vendor/etc/acdbdata/IDP/india/INDIA_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/india/INDIA_Speaker_cal.acdb \
     vendor/xiaomi/mojito/proprietary/vendor/etc/acdbdata/IDP/india/INDIA_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/india/INDIA_workspaceFile.qwsp \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/acdbdata/IDP/sm6150-tavil-snd-card/IDP_WCD9340_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/sm6150-tavil-snd-card/IDP_WCD9340_Bluetooth_cal.acdb \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/acdbdata/IDP/sm6150-tavil-snd-card/IDP_WCD9340_Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/sm6150-tavil-snd-card/IDP_WCD9340_Codec_cal.acdb \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/acdbdata/IDP/sm6150-tavil-snd-card/IDP_WCD9340_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/sm6150-tavil-snd-card/IDP_WCD9340_General_cal.acdb \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/acdbdata/IDP/sm6150-tavil-snd-card/IDP_WCD9340_Global_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/sm6150-tavil-snd-card/IDP_WCD9340_Global_cal.acdb \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/acdbdata/IDP/sm6150-tavil-snd-card/IDP_WCD9340_Handset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/sm6150-tavil-snd-card/IDP_WCD9340_Handset_cal.acdb \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/acdbdata/IDP/sm6150-tavil-snd-card/IDP_WCD9340_Hdmi_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/sm6150-tavil-snd-card/IDP_WCD9340_Hdmi_cal.acdb \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/acdbdata/IDP/sm6150-tavil-snd-card/IDP_WCD9340_Headset_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/sm6150-tavil-snd-card/IDP_WCD9340_Headset_cal.acdb \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/acdbdata/IDP/sm6150-tavil-snd-card/IDP_WCD9340_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/sm6150-tavil-snd-card/IDP_WCD9340_Speaker_cal.acdb \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/acdbdata/IDP/sm6150-tavil-snd-card/IDP_WCD9340_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/IDP/sm6150-tavil-snd-card/IDP_WCD9340_workspaceFile.qwsp \
     vendor/xiaomi/mojito/proprietary/vendor/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Bluetooth_cal.acdb \
     vendor/xiaomi/mojito/proprietary/vendor/etc/acdbdata/QRD/QRD_Codec_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Codec_cal.acdb \
     vendor/xiaomi/mojito/proprietary/vendor/etc/acdbdata/QRD/QRD_General_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_General_cal.acdb \
@@ -200,6 +415,64 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/etc/acdbdata/QRD/QRD_Speaker_cal.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_Speaker_cal.acdb \
     vendor/xiaomi/mojito/proprietary/vendor/etc/acdbdata/QRD/QRD_workspaceFile.qwsp:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/QRD/QRD_workspaceFile.qwsp \
     vendor/xiaomi/mojito/proprietary/vendor/etc/acdbdata/adsp_avs_config.acdb:$(TARGET_COPY_OUT_VENDOR)/etc/acdbdata/adsp_avs_config.acdb \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/cacert_location.pem:$(TARGET_COPY_OUT_VENDOR)/etc/cacert_location.pem \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/calib.config:$(TARGET_COPY_OUT_VENDOR)/etc/calib.config \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/102_SummerDay.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/102_SummerDay.png \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/103_Fantasy.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/103_Fantasy.png \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/104_Meet.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/104_Meet.png \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/105_WindSing.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/105_WindSing.png \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/106_Lost.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/106_Lost.png \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/107_Central.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/107_Central.png \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/108_NorthernEurope.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/108_NorthernEurope.png \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/109_Rome.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/109_Rome.png \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/110_BlackGold.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/110_BlackGold.png \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/111_GreenOrange.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/111_GreenOrange.png \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/112_Cyberpunk.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/112_Cyberpunk.png \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/113_BlackIce.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/113_BlackIce.png \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/CFR_para_M_V07.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_M_V07.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/CFR_para_M_V10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_M_V10.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/CFR_para_UW_V01.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_UW_V01.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/CFR_para_UW_V10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_UW_V10.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/CFR_para_W_QM_V07.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_W_QM_V07.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/CFR_para_W_V07.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_W_V07.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/CFR_para_W_V10.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/CFR_para_W_V10.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/LDC_FPC_TUNING_DATA.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/LDC_FPC_TUNING_DATA.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/LDC_PACKDATA_VENDORID_0x01.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/LDC_PACKDATA_VENDORID_0x01.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/LDC_PACKDATA_VENDORID_0x07.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/LDC_PACKDATA_VENDORID_0x07.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/almalence_sr_params_tele.config:$(TARGET_COPY_OUT_VENDOR)/etc/camera/almalence_sr_params_tele.config \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/almalence_sr_params_wide.config:$(TARGET_COPY_OUT_VENDOR)/etc/camera/almalence_sr_params_wide.config \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/beauty_ui9_intelligent_params.config:$(TARGET_COPY_OUT_VENDOR)/etc/camera/beauty_ui9_intelligent_params.config \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/body_slim_ui9_params.config:$(TARGET_COPY_OUT_VENDOR)/etc/camera/body_slim_ui9_params.config \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camxoverridesettings.txt \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/eisoverridesettings.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/eisoverridesettings.txt \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/eyelineblush.cng:$(TARGET_COPY_OUT_VENDOR)/etc/camera/eyelineblush.cng \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/female_bg.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/female_bg.png \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/female_icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/female_icon.png \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/golden_rear_dc_cal_wd.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/golden_rear_dc_cal_wd.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/golden_rear_dc_cal_wu.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/golden_rear_dc_cal_wu.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/hdr_ui9_params.config:$(TARGET_COPY_OUT_VENDOR)/etc/camera/hdr_ui9_params.config \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/male_bg.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/male_bg.png \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/male_icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/male_icon.png \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/megviifacepp_0_5_2_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/megviifacepp_0_5_2_model \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/mibokeh_712_opencl.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mibokeh_712_opencl.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/mibokeh_712_parameter.bin:$(TARGET_COPY_OUT_VENDOR)/etc/camera/mibokeh_712_parameter.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/model/dof_model/capture_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model/dof_model/capture_cache \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/model/dof_model/capture_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model/dof_model/capture_model \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/model/dof_model/capture_policy:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model/dof_model/capture_policy \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/model/rt_model/preview_cache:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model/rt_model/preview_cache \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/model/rt_model/preview_model:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model/rt_model/preview_model \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/model/rt_model/preview_policy:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model/rt_model/preview_policy \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/model_back.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model_back.dlc \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/model_front.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/camera/model_front.dlc \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/sceneDetection.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sceneDetection.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/score_bg.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/score_bg.png \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/score_icon.png:$(TARGET_COPY_OUT_VENDOR)/etc/camera/score_icon.png \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/sr_params.xml:$(TARGET_COPY_OUT_VENDOR)/etc/camera/sr_params.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/vidhance_calibration:$(TARGET_COPY_OUT_VENDOR)/etc/camera/vidhance_calibration \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/camera/watermark_font_2300_3199.dat:$(TARGET_COPY_OUT_VENDOR)/etc/camera/watermark_font_2300_3199.dat \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/charger_fstab.qti:$(TARGET_COPY_OUT_VENDOR)/etc/charger_fstab.qti \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/cne/profileSlm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/profileSlm.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/cne/slm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/cne/slm.conf \
     vendor/xiaomi/mojito/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile1.xml \
     vendor/xiaomi/mojito/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile2.xml \
     vendor/xiaomi/mojito/proprietary/vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/ATT/ATT_profile3.xml \
@@ -228,15 +501,30 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile5.xml \
     vendor/xiaomi/mojito/proprietary/vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cne/wqeclient/VZW/VZW_profile6.xml \
     vendor/xiaomi/mojito/proprietary/vendor/etc/configstore/vpp.configstore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/configstore/vpp.configstore.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/configstore/wigig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/configstore/wigig.xml \
     vendor/xiaomi/mojito/proprietary/vendor/etc/data/dsi_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/dsi_config.xml \
     vendor/xiaomi/mojito/proprietary/vendor/etc/data/netmgr_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/data/netmgr_config.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/default-permissions/com.qualcomm.qti.cne.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default-permissions/com.qualcomm.qti.cne.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/device_features/mojito.xml:$(TARGET_COPY_OUT_VENDOR)/etc/device_features/mojito.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/device_features/sunny.xml:$(TARGET_COPY_OUT_VENDOR)/etc/device_features/sunny.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/dsi_panel_k7_38_0c_0a_fhdp_video_display_mi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dsi_panel_k7_38_0c_0a_fhdp_video_display_mi.xml \
     vendor/xiaomi/mojito/proprietary/vendor/etc/elliptic_sensor.xml:$(TARGET_COPY_OUT_VENDOR)/etc/elliptic_sensor.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/ftm_test_config_qrd:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_qrd \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/ftm_test_config_sm6150-tavil-snd-card:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_sm6150-tavil-snd-card \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/ftm_test_config_sm6150-wcd9375qrd-snd-card:$(TARGET_COPY_OUT_VENDOR)/etc/ftm_test_config_sm6150-wcd9375qrd-snd-card \
     vendor/xiaomi/mojito/proprietary/vendor/etc/gpfspath_oem_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/gpfspath_oem_config.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/gps_diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/gps_diag.cfg \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/hbtp/loader.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/hbtp/loader.cfg \
     vendor/xiaomi/mojito/proprietary/vendor/etc/hdr_config.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/hdr_config.cfg \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.0-service-qti.rc \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.1-service.wfdhdcp.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.3-service.widevine.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gnss@2.1-service-qti.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/android.hardware.keymaster@4.1-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.keymaster@4.1-service-qti.rc \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/init/android.hardware.lights-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.lights-qti.rc \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/cnd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/cnd.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/com.qualcomm.qti.wifidisplayhal@1.0-service.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
@@ -246,37 +534,78 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/imsdatadaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsdatadaemon.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/imsqmidaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsqmidaemon.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/imsrcsd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/imsrcsd.rc \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/init/init-qcril-data.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init-qcril-data.rc \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/init/init.batterysecret.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.batterysecret.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/init.time_daemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.time_daemon.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/init.vendor.sensors.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.vendor.sensors.rc \
-    vendor/xiaomi/mojito/proprietary/vendor/etc/init/ipa_fws.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ipa_fws.rc \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/init/init_thermal-engine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init_thermal-engine.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/netmgrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/netmgrd.rc \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/init/port-bridge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/port-bridge.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/qcrild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qcrild.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/qseecomd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/qseecomd.rc \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/init/shsusrd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/shsusrd.rc \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/init/ssgtzd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ssgtzd.rc \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/init/vendor.display.color@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.display.color@1.0-service.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/vendor.qti.adsprpc-sscrpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.adsprpc-sscrpc-service.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/vendor.qti.cdsprpc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.cdsprpc-service.rc \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/init/vendor.qti.esepowermanager@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.esepowermanager@1.1-service.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.alarm@1.0-service.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.dsp@1.0-service.rc \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qccvndhal@1.0-service.rc \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/vendor.qti.hardware.soter@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.soter@1.0-service.rc \
-    vendor/xiaomi/mojito/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.hardware.tui_comm@1.0-service-qti.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/vendor.sensors.qti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.qti.rc \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/init/vendor.xiaomi.hardware.mtdservice@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.mtdservice@1.2-service.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/xiaomi/mojito/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor-qti-hardware-sensorscalibrate.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/permissions/vendor.qti.hardware.factory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.qti.hardware.factory.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_Dual_Sharp_WQHD_cmd_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Dual_Sharp_WQHD_cmd_mode_dsi_panel.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_Dual_Sharp_wqhd_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Dual_Sharp_wqhd_video_mode_dsi_panel.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_Dual_nt35597_cmd_mode_dsi_truly_panel_without_DSC.xml.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Dual_nt35597_cmd_mode_dsi_truly_panel_without_DSC.xml.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_Dual_nt35597_video_mode_dsi_truly_panel_without_DSC.xml.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Dual_nt35597_video_mode_dsi_truly_panel_without_DSC.xml.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_Dual_nt36850_cmd_mode_dsi_truly_panel_without_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Dual_nt36850_cmd_mode_dsi_truly_panel_without_DSC.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_Dual_s6e3ha3_amoled_cmd_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Dual_s6e3ha3_amoled_cmd_mode_dsi_panel.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Sharp_2k_cmd_mode_qsync_dsi_panel.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Sharp_2k_video_mode_qsync_dsi_panel.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Sharp_4k_cmd_mode_dsc_dsi_panel.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Sharp_4k_video_mode_dsc_dsi_panel.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_Sharp_fhd_cmd_mode_qsync_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Sharp_fhd_cmd_mode_qsync_dsi_panel.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_Sharp_fhd_video_mode_qsync_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_Sharp_fhd_video_mode_qsync_dsi_panel.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_hx83112a_video_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_hx83112a_video_mode_dsi_truly_panel.xml \
     vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_k7_38_0c_0a_video_mode_fhdp_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_k7_38_0c_0a_video_mode_fhdp_dsi_panel.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_nt35597_cmd_mode_dsi_truly_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt35597_cmd_mode_dsi_truly_panel_with_DSC.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_nt35597_video_mode_dsi_truly_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt35597_video_mode_dsi_truly_panel_with_DSC.xml \
     vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_nt35695b_truly_fhd_command_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt35695b_truly_fhd_command_mode_dsi_panel.xml \
     vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_nt35695b_truly_fhd_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt35695b_truly_fhd_video_mode_dsi_panel.xml \
     vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_nt36672_truly_fhd_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt36672_truly_fhd_video_mode_dsi_panel.xml \
     vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_nt36672c_fhd_plus_video_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_nt36672c_fhd_plus_video_mode_dsi_panel.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_rm69298_amoled_fhd+_cmd_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_rm69298_amoled_fhd+_cmd_mode_dsi_truly_panel.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_rm69298_amoled_fhd+_video_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_rm69298_amoled_fhd+_video_mode_dsi_truly_panel.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_rm69299_amoled_fhd+_cmd_mode_dsi_visionox_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_rm69299_amoled_fhd+_cmd_mode_dsi_visionox_panel.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_rm69299_amoled_fhd+_video_mode_dsi_visionox_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_rm69299_amoled_fhd+_video_mode_dsi_visionox_panel.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_sharp_1080p_120hz_dual_dsi_cmd_mode_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_sharp_1080p_120hz_dual_dsi_cmd_mode_panel.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_sharp_1080p_cmd_mode_dsi_panel.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_sw43404_amoled_boe_fhd+_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_sw43404_amoled_boe_fhd+_panel_with_DSC.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_sw43404_amoled_cmd_mode_dsi_boe_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_sw43404_amoled_cmd_mode_dsi_boe_panel_with_DSC.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_sw43404_amoled_video_mode_dsi_boe_panel_with_DSC.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_sw43404_amoled_video_mode_dsi_boe_panel_with_DSC.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_td4328_cmd_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_td4328_cmd_mode_dsi_truly_panel.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_td4328_video_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_td4328_video_mode_dsi_truly_panel.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_td4330_cmd_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_td4330_cmd_mode_dsi_truly_panel.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/qdcm_calib_data_td4330_video_mode_dsi_truly_panel.xml:$(TARGET_COPY_OUT_VENDOR)/etc/qdcm_calib_data_td4330_video_mode_dsi_truly_panel.xml \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sdr_config.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/sdr_config.cfg \
-    vendor/xiaomi/mojito/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base.policy \
-    vendor/xiaomi/mojito/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext.policy \
-    vendor/xiaomi/mojito/proprietary/vendor/etc/seccomp_policy/imsrtp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/imsrtp.policy \
     vendor/xiaomi/mojito/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
-    vendor/xiaomi/mojito/proprietary/vendor/etc/seccomp_policy/wfdhdcphalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdhdcphalservice.policy \
-    vendor/xiaomi/mojito/proprietary/vendor/etc/seccomp_policy/wfdvndservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wfdvndservice.policy \
     vendor/xiaomi/mojito/proprietary/vendor/etc/seccomp_policy/wifidisplayhalservice.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/wifidisplayhalservice.policy \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/sensor_diag.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/sensor_diag.cfg \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/adux1050_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/adux1050_0.json \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/bmi160_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/bmi160_0.json \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/lsm6ds3c_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/lsm6ds3c_0.json \
@@ -289,10 +618,14 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sm7150_tsl2540_0.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sm7150_tsl2540_0.json \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_amd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd.json \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_amd_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_disabled.json \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_amd_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_amd_sw_enabled.json \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_aont.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_aont.json \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_basic_gestures.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_basic_gestures.json \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_bring_to_ear.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_bring_to_ear.json \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_ccd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd.json \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_ccd_v2_walk.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd_v2_walk.json \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_ccd_v3_1_walk.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd_v3_1_walk.json \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_ccd_v3_walk.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_ccd_v3_walk.json \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_cm.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_cm.json \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_dae.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_dae.json \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_device_orient.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_device_orient.json \
@@ -301,18 +634,22 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_dpc.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_dpc.json \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_facing.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_facing.json \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_fmv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_fmv.json \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_fmv_legacy.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_fmv_legacy.json \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_geomag_rv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_geomag_rv.json \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_gyro_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_gyro_cal.json \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_heart_rate.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_heart_rate.json \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_mag_cal.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_mag_cal.json \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_mag_cal_legacy.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_mag_cal_legacy.json \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_multishake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_multishake.json \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_pedometer.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_pedometer.json \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_rmd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rmd.json \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_rotv.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_rotv.json \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_smd.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_smd.json \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_tilt.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt.json \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_tilt_sw_disabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_disabled.json \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_tilt_sw_enabled.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_sw_enabled.json \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_tilt_to_wake.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_tilt_to_wake.json \
-    vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/config/sns_wrist_pedo.json:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/config/sns_wrist_pedo.json \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/proto/descriptor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/descriptor.proto \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/proto/nanopb.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/nanopb.proto \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/proto/qti_gravity.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/qti_gravity.proto \
@@ -326,6 +663,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/proto/sns_async_com_port.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_async_com_port.proto \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/proto/sns_basic_gestures.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_basic_gestures.proto \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/proto/sns_bring_to_ear.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_bring_to_ear.proto \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/proto/sns_busrw.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_busrw.proto \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/proto/sns_cal.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_cal.proto \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/proto/sns_ccd_ttw.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ccd_ttw.proto \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/proto/sns_ccd_walk.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ccd_walk.proto \
@@ -339,6 +677,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/proto/sns_device_orient.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_device_orient.proto \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/proto/sns_diag.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_diag.proto \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/proto/sns_diag_sensor.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_diag_sensor.proto \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/proto/sns_direct_channel.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_direct_channel.proto \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/proto/sns_distance_bound.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_distance_bound.proto \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/proto/sns_dpc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_dpc.proto \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/proto/sns_ext_svc.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ext_svc.proto \
@@ -400,19 +739,25 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/proto/sns_ultra_violet.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_ultra_violet.proto \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/proto/sns_wrist_tilt_gesture.proto:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/proto/sns_wrist_tilt_gesture.proto \
     vendor/xiaomi/mojito/proprietary/vendor/etc/sensors/sns_reg_config:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/sns_reg_config \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/xiaomi/mojito/proprietary/vendor/etc/thermal-4k.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-4k.conf \
     vendor/xiaomi/mojito/proprietary/vendor/etc/thermal-arvr.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-arvr.conf \
     vendor/xiaomi/mojito/proprietary/vendor/etc/thermal-camera.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-camera.conf \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/thermal-camera2.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-camera2.conf \
     vendor/xiaomi/mojito/proprietary/vendor/etc/thermal-chg-only.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-chg-only.conf \
     vendor/xiaomi/mojito/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
     vendor/xiaomi/mojito/proprietary/vendor/etc/thermal-map.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-map.conf \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/thermal-mgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-mgame.conf \
     vendor/xiaomi/mojito/proprietary/vendor/etc/thermal-nolimits.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-nolimits.conf \
     vendor/xiaomi/mojito/proprietary/vendor/etc/thermal-normal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-normal.conf \
     vendor/xiaomi/mojito/proprietary/vendor/etc/thermal-phone.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-phone.conf \
     vendor/xiaomi/mojito/proprietary/vendor/etc/thermal-tgame.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-tgame.conf \
     vendor/xiaomi/mojito/proprietary/vendor/etc/thermald-devices.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermald-devices.conf \
     vendor/xiaomi/mojito/proprietary/vendor/etc/wfdconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wfdconfig.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/etc/xtra_root_cert.pem:$(TARGET_COPY_OUT_VENDOR)/etc/xtra_root_cert.pem \
     vendor/xiaomi/mojito/proprietary/vendor/firmware/CAMERA_ICP.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/CAMERA_ICP.elf \
+    vendor/xiaomi/mojito/proprietary/vendor/firmware/Conf_MultipleTest.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/Conf_MultipleTest.ini \
     vendor/xiaomi/mojito/proprietary/vendor/firmware/a612_rgmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a612_rgmu.bin \
     vendor/xiaomi/mojito/proprietary/vendor/firmware/a612_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a612_zap.b00 \
     vendor/xiaomi/mojito/proprietary/vendor/firmware/a612_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a612_zap.b01 \
@@ -425,7 +770,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/firmware/a615_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a615_zap.elf \
     vendor/xiaomi/mojito/proprietary/vendor/firmware/a615_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a615_zap.mdt \
     vendor/xiaomi/mojito/proprietary/vendor/firmware/a618_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a618_gmu.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/firmware/a630_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a630_gmu.bin \
     vendor/xiaomi/mojito/proprietary/vendor/firmware/a630_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a630_sqe.fw \
+    vendor/xiaomi/mojito/proprietary/vendor/firmware/a640_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/a640_gmu.bin \
     vendor/xiaomi/mojito/proprietary/vendor/firmware/aw87xxx_pid_59_fm_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw87xxx_pid_59_fm_1.bin \
     vendor/xiaomi/mojito/proprietary/vendor/firmware/aw87xxx_pid_59_music_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw87xxx_pid_59_music_1.bin \
     vendor/xiaomi/mojito/proprietary/vendor/firmware/aw87xxx_pid_59_off_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw87xxx_pid_59_off_1.bin \
@@ -436,6 +783,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/firmware/aw87xxx_pid_5a_off_0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw87xxx_pid_5a_off_0.bin \
     vendor/xiaomi/mojito/proprietary/vendor/firmware/aw87xxx_pid_5a_rcv_0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw87xxx_pid_5a_rcv_0.bin \
     vendor/xiaomi/mojito/proprietary/vendor/firmware/aw87xxx_pid_5a_voice_0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw87xxx_pid_5a_voice_0.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/firmware/aw87xxx_vmax_0.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw87xxx_vmax_0.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/firmware/aw87xxx_vmax_1.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/aw87xxx_vmax_1.bin \
     vendor/xiaomi/mojito/proprietary/vendor/firmware/focaltech_ts_fw_samsung.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/focaltech_ts_fw_samsung.bin \
     vendor/xiaomi/mojito/proprietary/vendor/firmware/ipa_fws.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b00 \
     vendor/xiaomi/mojito/proprietary/vendor/firmware/ipa_fws.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b01 \
@@ -444,88 +793,335 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/firmware/ipa_fws.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.b04 \
     vendor/xiaomi/mojito/proprietary/vendor/firmware/ipa_fws.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.elf \
     vendor/xiaomi/mojito/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/ipa_fws.mdt \
+    vendor/xiaomi/mojito/proprietary/vendor/firmware/wigig/wigig.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wigig/wigig.ini \
+    vendor/xiaomi/mojito/proprietary/vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini \
+    vendor/xiaomi/mojito/proprietary/vendor/firmware/wlan/qca_cld/wlan_mac.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/wlan_mac.bin \
     vendor/xiaomi/mojito/proprietary/vendor/lib/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib/btaudio_offload_if.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.sensormodule.k7_ofilm_gc02m1_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.k7_ofilm_gc02m1_macro.bin \
     vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.sensormodule.k7_ofilm_imx355_ultra.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.k7_ofilm_imx355_ultra.bin \
     vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.sensormodule.k7_ofilm_imx582_wide.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.k7_ofilm_imx582_wide.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.sensormodule.k7_ofilm_ov02b1b_depth.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.k7_ofilm_ov02b1b_depth.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.sensormodule.k7_ofilm_ov13b10_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.k7_ofilm_ov13b10_front.bin \
     vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.sensormodule.k7_semco_imx582_wide.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.k7_semco_imx582_wide.bin \
     vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.sensormodule.k7_sunny_gc02m1_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.k7_sunny_gc02m1_macro.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.sensormodule.k7_sunny_gc02m1b_depth.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.k7_sunny_gc02m1b_depth.bin \
     vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.sensormodule.k7_sunny_imx355_ultra.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.k7_sunny_imx355_ultra.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.sensormodule.k7_sunny_ov13b10_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.sensormodule.k7_sunny_ov13b10_front.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.default.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_ofilm_gc02m1_macro_china.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_ofilm_gc02m1_macro_china.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_ofilm_gc02m1_macro_global.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_ofilm_gc02m1_macro_global.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_ofilm_gc02m1_macro_india.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_ofilm_gc02m1_macro_india.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_ofilm_imx355_ultra_china.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_ofilm_imx355_ultra_china.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_ofilm_imx355_ultra_global.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_ofilm_imx355_ultra_global.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_ofilm_imx355_ultra_india.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_ofilm_imx355_ultra_india.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_ofilm_imx582_wide_china.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_ofilm_imx582_wide_china.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_ofilm_imx582_wide_global.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_ofilm_imx582_wide_global.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_ofilm_imx582_wide_india.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_ofilm_imx582_wide_india.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_ofilm_ov02b1b_depth_china.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_ofilm_ov02b1b_depth_china.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_ofilm_ov02b1b_depth_global.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_ofilm_ov02b1b_depth_global.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_ofilm_ov02b1b_depth_india.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_ofilm_ov02b1b_depth_india.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_ofilm_ov13b10_front_china.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_ofilm_ov13b10_front_china.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_ofilm_ov13b10_front_global.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_ofilm_ov13b10_front_global.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_ofilm_ov13b10_front_india.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_ofilm_ov13b10_front_india.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_semco_imx582_wide_china.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_semco_imx582_wide_china.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_semco_imx582_wide_global.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_semco_imx582_wide_global.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_semco_imx582_wide_india.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_semco_imx582_wide_india.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_sunny_gc02m1_macro_china.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_sunny_gc02m1_macro_china.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_sunny_gc02m1_macro_global.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_sunny_gc02m1_macro_global.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_sunny_gc02m1_macro_india.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_sunny_gc02m1_macro_india.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_sunny_gc02m1b_depth_china.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_sunny_gc02m1b_depth_china.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_sunny_gc02m1b_depth_global.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_sunny_gc02m1b_depth_global.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_sunny_gc02m1b_depth_india.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_sunny_gc02m1b_depth_india.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_sunny_imx355_ultra_china.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_sunny_imx355_ultra_china.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_sunny_imx355_ultra_global.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_sunny_imx355_ultra_global.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_sunny_imx355_ultra_india.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_sunny_imx355_ultra_india.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_sunny_ov13b10_front_china.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_sunny_ov13b10_front_china.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_sunny_ov13b10_front_global.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_sunny_ov13b10_front_global.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.k7_sunny_ov13b10_front_india.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.k7_sunny_ov13b10_front_india.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/com.qti.tuned.liteon_imx318.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/com.qti.tuned.liteon_imx318.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.eisv2.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.eisv3.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/components/com.qti.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.aec.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/components/com.qti.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.af.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/components/com.qti.stats.afd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.afd.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/components/com.qti.stats.asd.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.asd.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/components/com.qti.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.awb.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/components/com.qti.stats.haf.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.haf.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/components/com.qti.stats.localhistogram.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.localhistogram.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/components/com.qti.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.pdlib.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/components/com.qti.stats.pdlibsony.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.pdlibsony.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/components/com.qti.stats.pdlibwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/com.qti.stats.pdlibwrapper.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/components/libmmcamera_cac3.so:$(TARGET_COPY_OUT_VENDOR)/lib/camera/components/libmmcamera_cac3.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreview.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigpreviewlite.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideo.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib/camera/fdconfigvideolite.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@2.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@2.1.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/com.qualcomm.qti.imscmservice@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.imscmservice@2.2.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/com.qualcomm.qti.uceservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.uceservice@2.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/com.qualcomm.qti.uceservice@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.uceservice@2.1.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/com.qualcomm.qti.uceservice@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.uceservice@2.2.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/eglSubDriverAndroid.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libEGL_adreno.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/egl/libGLESv1_CM_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLESv1_CM_adreno.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/egl/libGLESv2_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLESv2_adreno.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_adreno.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libq3dtools_esx.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/ftm_fm_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib/ftm_fm_lib.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/hw/android.hardware.gnss@2.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.gnss@2.1-impl-qti.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/hw/android.hardware.health@2.0-impl-2.1-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.health@2.0-impl-2.1-qti.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/hw/android.hardware.keymaster@3.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.keymaster@3.0-impl-qti.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/hw/audio.bluetooth_qti.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.bluetooth_qti.default.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/hw/audio.primary.sm6150.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.sm6150.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/hw/com.dsi.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/com.dsi.ant@1.0-impl.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/hw/sound_trigger.primary.sm6150.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.sm6150.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/hw/vendor.qti.esepowermanager@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.esepowermanager@1.1-impl.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/hw/vendor.qti.gnss@4.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.gnss@4.0-impl.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.fm@1.0-impl.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.qseecom@1.0-impl.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/hw/vendor.qti.hardware.soter@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.qti.hardware.soter@1.0-impl.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.adreno.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/lib-imscmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imscmservice.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/lib-imsdpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsdpl.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/lib-imsqimf.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsqimf.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/lib-imsrcs-v2.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsrcs-v2.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/lib-imsrcsbaseimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsrcsbaseimpl.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/lib-imsvtcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsvtcore.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/lib-imsxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-imsxml.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/lib-rcsconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-rcsconfig.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/lib-rtpcommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-rtpcommon.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/lib-rtpcore.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-rtpcore.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/lib-rtpsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-rtpsl.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/lib-siputility.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-siputility.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/lib-uceservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib-uceservice.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAlacSwDec.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libApeSwDec.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libC2D2.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCB.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/libEGL_adreno.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libFileMux_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFileMux_proprietary.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFlacSwDec.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libGLESv2_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGLESv2_adreno.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libGPQTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPQTEEC_vendor.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPTEE_vendor.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libGPreqcancel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPreqcancel.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libGPreqcancel_svc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libGPreqcancel_svc.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libI420colorconvert.so:$(TARGET_COPY_OUT_VENDOR)/lib/libI420colorconvert.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libMpeg4SwEncoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libMpeg4SwEncoder.so \
-    vendor/xiaomi/mojito/proprietary/vendor/lib/libOmxAacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAacDec.so \
-    vendor/xiaomi/mojito/proprietary/vendor/lib/libOmxAlacDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAlacDec.so \
-    vendor/xiaomi/mojito/proprietary/vendor/lib/libOmxAlacDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAlacDecSw.so \
-    vendor/xiaomi/mojito/proprietary/vendor/lib/libOmxAmrDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAmrDec.so \
-    vendor/xiaomi/mojito/proprietary/vendor/lib/libOmxAmrwbplusDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxAmrwbplusDec.so \
-    vendor/xiaomi/mojito/proprietary/vendor/lib/libOmxApeDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxApeDec.so \
-    vendor/xiaomi/mojito/proprietary/vendor/lib/libOmxApeDecSw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxApeDecSw.so \
-    vendor/xiaomi/mojito/proprietary/vendor/lib/libOmxDsdDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxDsdDec.so \
-    vendor/xiaomi/mojito/proprietary/vendor/lib/libOmxEvrcDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxEvrcDec.so \
-    vendor/xiaomi/mojito/proprietary/vendor/lib/libOmxQcelp13Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxQcelp13Dec.so \
-    vendor/xiaomi/mojito/proprietary/vendor/lib/libOmxSwVdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxSwVdec.so \
-    vendor/xiaomi/mojito/proprietary/vendor/lib/libOmxSwVencMpeg4.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxSwVencMpeg4.so \
-    vendor/xiaomi/mojito/proprietary/vendor/lib/libOmxVpp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxVpp.so \
-    vendor/xiaomi/mojito/proprietary/vendor/lib/libOmxWmaDec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOmxWmaDec.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib/libOpenCL.so \
-    vendor/xiaomi/mojito/proprietary/vendor/lib/liba2dpoffload.so:$(TARGET_COPY_OUT_VENDOR)/lib/liba2dpoffload.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQSEEComAPI.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libQTEEConnector_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libQTEEConnector_vendor.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libSecureUILib.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libStDrvInt.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libVkLayer_q3dtools.so:$(TARGET_COPY_OUT_VENDOR)/lib/libVkLayer_q3dtools.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdb-fts.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbloader.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libacdbrtac.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadiertac.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libadm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadm.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libadpcmdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadpcmdec.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libadreno_app_profiles.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadreno_app_profiles.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadreno_utils.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsp_default_listener.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadsprpc.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libalCFR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libalCFR.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libaoa.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaoa.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudcal.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudio_log_utils.so \
-    vendor/xiaomi/mojito/proprietary/vendor/lib/libaudioparsers.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaudioparsers.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libbase64.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbase64.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbatching.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libbluetooth_audio_session_qti.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetooth_audio_session_qti.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib/libc2d30_bltlib.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamera_nn_stub.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libcamxfdalgov7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdalgov7.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libcamxfdalgov8.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdalgov8.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libcamxfdengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxfdengine.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libcamxstatscore.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxstatscore.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libcamxswprocessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxswprocessalgo.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamxtintlessalgo.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2svacnn.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapiv2vop.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libcdfw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdfw.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libcdfw_remote_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdfw_remote_api.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsp_default_listener.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcdsprpc.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcne.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneapiclient.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libcneoplookup.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneoplookup.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libcneqmiutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcneqmiutils.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libconfigdb.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcpion.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libcppf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcppf.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdataitems.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdiag.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisp-aba.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdisplayqos.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libdpmqmihal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdpmqmihal.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmfs.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdrmtime.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libdsd2pcm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsd2pcm.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsi_netctrl.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdsutils.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libfastcrc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcrc.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvdsp_stub.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastcvopt.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libfastrpc_utf_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfastrpc_utf_stub.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libgarden.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgarden.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-calwrapper.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libgcs-ipc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-ipc.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libgcs-osal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs-osal.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libgcs.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgcs.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libgdtap.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgdtap.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libgeofencing.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgeofencing.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libgnss.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgnss.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libgnsspps.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgnsspps.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libgps.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgps.utils.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpudataproducer.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgsl.so \
-    vendor/xiaomi/mojito/proprietary/vendor/lib/libhdmiedid.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdmiedid.so \
-    vendor/xiaomi/mojito/proprietary/vendor/lib/libhfp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhfp.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libhbtpclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhbtpclient.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libhbtpdsp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhbtpdsp.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libhbtpfrmwk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhbtpfrmwk.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcp1prov.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libhdcp2p2prov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcp2p2prov.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libhdcpsrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdcpsrm.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhdr_tm.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libhta_hexagon_runtime.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhta_hexagon_runtime.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libidl.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_client_api.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libizat_core.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjnihelper.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterdeviceutils.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libkeymasterprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterprovision.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libkeymasterutils.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/liblbs_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblbs_core.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/liblistensoundmodel2.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblistensoundmodel2.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-glnext.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libllvm-qcom.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_api_v02.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libloc_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_core.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libloc_socket.so:$(TARGET_COPY_OUT_VENDOR)/lib/libloc_socket.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/liblocation_api.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocation_api.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/liblocationservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocationservice.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/liblocationservice_glue.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblocationservice_glue.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/liblowi_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblowi_client.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/liblowi_wifihal.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblowi_wifihal.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblqe.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdmdetect.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmdsprpc.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminkdescriptor.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libminksocket.so:$(TARGET_COPY_OUT_VENDOR)/lib/libminksocket.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libmiracast.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmiracast.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libmlipay.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmlipay.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libmlipay@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmlipay@1.1.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-color-convertor.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmm-hdcpmgr.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmosal.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libmmrtpdecoder_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpdecoder_proprietary.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libmmrtpencoder_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmmrtpencoder_proprietary.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmulawdec.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libnetmgr_common.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr_common.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libnetmgr_nr_fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr_nr_fusion.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libnetmgr_rmnet_ext.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnetmgr_rmnet_ext.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libnlnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnlnetmgr.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/liboemcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib/liboemcrypto.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libops.so:$(TARGET_COPY_OUT_VENDOR)/lib/libops.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpdmapper.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpdnotifier.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libperipheral_client.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libpvr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpvr.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/libq3dtools_adreno.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcbor.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libqcc_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcc_file_agent.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcci_legacy.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcmaputils.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libqcodec2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcodec2.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libqcrilFramework.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcrilFramework.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libqcrildatactl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqcrildatactl.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdi.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libqdma_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdma_file_agent.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqdp.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqisl.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libqmi_cci.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_cci.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libqmi_client_helper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_helper.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libqmi_client_qmux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_client_qmux.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libqmi_common_so.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_common_so.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csi.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libqmi_csvt_srvc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_csvt_srvc.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_encdec.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libqmi_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmi_legacy.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqmiservices.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqrtr.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqseed3.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqsocket.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtigef.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib/libqtikeymaster4.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/librcc.so:$(TARGET_COPY_OUT_VENDOR)/lib/librcc.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libril-qc-hal-qmi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-hal-qmi.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libril-qc-logger.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-logger.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libril-qc-ltedirectdisc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-ltedirectdisc.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libril-qc-radioconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qc-radioconfig.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib/libril-qcril-hook-oem.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/librilqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib/librilqmiservices.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/librmp.so:$(TARGET_COPY_OUT_VENDOR)/lib/librmp.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib/librpmb.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib/librs_adreno.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libscveCommon_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveCommon_stub.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libscveObjectSegmentation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectSegmentation.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libscveObjectSegmentation_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectSegmentation_stub.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libscveObjectTracker_stub.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdedrm.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-color.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libsdm-colormgr-algo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-colormgr-algo.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libsdm-diag.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-diag.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libsdm-disp-vndapis.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdm-disp-vndapis.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdmextension.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsdsprpc.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsecureui_svcsock.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libsensorcal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorcal.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsensorslog.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libsettings.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsettings.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libsi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsi.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libslimclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libslimclient.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libsmwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsmwrapper.so \
-    vendor/xiaomi/mojito/proprietary/vendor/lib/libsndmonitor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsndmonitor.so \
-    vendor/xiaomi/mojito/proprietary/vendor/lib/libspkrprot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libspkrprot.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_device_mode_stub.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_fastRPC_util.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_low_lat_stream_stub.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libsns_registry_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsns_registry_skel.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnsapi.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsnsdiaglog.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssc_default_listener.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssd.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libssrec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libssrec.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsubsystem_control.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswregistrationalgo.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libswvdec.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsysmon_cdsp_skel.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib/libsystem_health_mon.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthermalclient.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtinyxml2_1.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libtrustedapploader.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrustedapploader.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtzdrmgenprov.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libvideoutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvideoutils.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libvppclient.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvppclient.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpphvx.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libvppimmotion.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvppimmotion.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpplibrary.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libvpptestutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpptestutils.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libvsim.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvsim.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libwfdcodecv4l2_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcodecv4l2_proprietary.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libwfdcommonutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdcommonutils_proprietary.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libwfdconfigutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdconfigutils_proprietary.so \
@@ -546,10 +1142,22 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libwfduibcsrc_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsrc_proprietary.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libwfduibcsrcinterface_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfduibcsrcinterface_proprietary.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/libwfdutils_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwfdutils_proprietary.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwms.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwqe.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxml.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib/libxtadapter.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/qcrild_librilutils.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/qtibus.so:$(TARGET_COPY_OUT_VENDOR)/lib/qtibus.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/qtimutex.so:$(TARGET_COPY_OUT_VENDOR)/lib/qtimutex.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_Classic.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_Classic.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/rfsa/adsp/capi_v2_aptX_HD.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/capi_v2_aptX_HD.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/rfsa/adsp/libSuperSensor_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libSuperSensor_skel.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/rfsa/adsp/libVC1Dec.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVC1Dec.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/rfsa/adsp/libVC1DecDsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVC1DecDsp_skel.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/rfsa/adsp/libVDHexagonSuperPhoto_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libVDHexagonSuperPhoto_skel.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/rfsa/adsp/libapps_mem_heap.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libapps_mem_heap.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libarcsoft_dualcam_refocus_skel.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/rfsa/adsp/libcamera_nn_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libcamera_nn_skel.so \
@@ -562,20 +1170,105 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/lib/rfsa/adsp/libfastcvdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libfastcvdsp_skel.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/rfsa/adsp/libhexagon_nn_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libhexagon_nn_skel.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/rfsa/adsp/libhexagon_nn_skel_secondary.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libhexagon_nn_skel_secondary.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/rfsa/adsp/libmialgo_rfs_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libmialgo_rfs_cdsp_skel.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveObjectSegmentation_skel.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/rfsa/adsp/libscveT2T_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libscveT2T_skel.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/rfsa/adsp/libsns_device_mode_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_device_mode_skel.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/libsns_low_lat_stream_skel.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/rfsa/adsp/misound_karaoke_res.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_karaoke_res.bin \
     vendor/xiaomi/mojito/proprietary/vendor/lib/rfsa/adsp/misound_karaokemix_res.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_karaokemix_res.bin \
     vendor/xiaomi/mojito/proprietary/vendor/lib/rfsa/adsp/misound_res.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_res.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/rfsa/adsp/misound_res_headphone.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_res_headphone.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/rfsa/adsp/misound_res_spk.bin:$(TARGET_COPY_OUT_VENDOR)/lib/rfsa/adsp/misound_res_spk.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.ssc.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/sensors.touch.detect.so:$(TARGET_COPY_OUT_VENDOR)/lib/sensors.touch.detect.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libasphere.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcbassboost.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcreverb.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libqcvirt.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libshoebox.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/unnhal-acc-hta.so:$(TARGET_COPY_OUT_VENDOR)/lib/unnhal-acc-hta.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.1.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.2.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.3.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.display.color@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.4.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.display.color@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.color@1.5.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.display.postproc@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.factory@2.1.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.data.mwqem@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.mwqem@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.data.slm@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.esepowermanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.esepowermanager@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.esepowermanager@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.esepowermanager@1.1.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.data.cne.internal.server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.cne.internal.server@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.data.connection@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.connection@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.data.connection@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.connection@1.1.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.data.dynamicdds@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.dynamicdds@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.data.iwlan@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.iwlan@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.data.qmi@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.dsp@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.fingerprint@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.fm@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qccsyshal@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.qccvndhal@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qccvndhal@1.0-halimpl.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.qccvndhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qccvndhal@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qseecom@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.qteeconnector@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.am@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.radio.atcmdfwd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.atcmdfwd@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.1.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.2.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.3.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.4.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.5.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.radio.ims@1.6.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.ims@1.6.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.radio.lpa@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.lpa@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qcrilhook@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@2.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@2.1.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@2.2.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@2.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@2.3.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.radio.qtiradio@2.4.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.qtiradio@2.4.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.radio.uim@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.radio.uim@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim@1.1.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.radio.uim@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim@1.2.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim_remote_client@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim_remote_client@1.1.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_client@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim_remote_client@1.2.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.scve.objecttracker@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.scve.objecttracker@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.scve.panorama@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.scve.panorama@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.sensorscalibrate@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.sigma_miracast@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.sigma_miracast@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.soter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.soter@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.1.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.2.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.vpp@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.vpp@1.3.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.wifidisplaysession@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.hardware.wifidisplaysessionl@1.0-halimpl.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.callcapability@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.callinfo@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.ims.factory@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.factory@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.rcsconfig@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.rcsconfig@1.1.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.ims.rcsconfig@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.rcsconfig@2.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.ims.rcsconfig@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.ims.rcsconfig@2.1.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.imsrtpservice@3.0-service-Impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.imsrtpservice@3.0-service-Impl.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.qti.imsrtpservice@3.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.xiaomi.hardware.mlipay@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.mlipay@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib/vendor.xiaomi.hardware.mlipay@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.xiaomi.hardware.mlipay@1.1.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/btaudio_offload_if.so:$(TARGET_COPY_OUT_VENDOR)/lib64/btaudio_offload_if.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.sensor.imx318.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.imx318.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.sensor.ofilm_gc02m1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.ofilm_gc02m1.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.sensor.ofilm_imx355.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.ofilm_imx355.so \
@@ -588,34 +1281,159 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.sensor.sunny_imx355.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.sunny_imx355.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.sensor.sunny_ov13b10.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensor.sunny_ov13b10.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.sensormodule.k7_ofilm_gc02m1_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.k7_ofilm_gc02m1_macro.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.sensormodule.k7_ofilm_imx355_ultra.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.k7_ofilm_imx355_ultra.bin \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.sensormodule.k7_ofilm_imx582_wide.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.k7_ofilm_imx582_wide.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.sensormodule.k7_ofilm_ov02b1b_depth.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.k7_ofilm_ov02b1b_depth.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.sensormodule.k7_ofilm_ov13b10_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.k7_ofilm_ov13b10_front.bin \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.sensormodule.k7_semco_imx582_wide.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.k7_semco_imx582_wide.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.sensormodule.k7_sunny_gc02m1_macro.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.k7_sunny_gc02m1_macro.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.sensormodule.k7_sunny_gc02m1b_depth.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.k7_sunny_gc02m1b_depth.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.sensormodule.k7_sunny_imx355_ultra.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.k7_sunny_imx355_ultra.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.sensormodule.k7_sunny_ov13b10_front.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.sensormodule.k7_sunny_ov13b10_front.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.default.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.default.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_ofilm_gc02m1_macro_china.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_ofilm_gc02m1_macro_china.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_ofilm_gc02m1_macro_global.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_ofilm_gc02m1_macro_global.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_ofilm_gc02m1_macro_india.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_ofilm_gc02m1_macro_india.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_ofilm_imx355_ultra_china.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_ofilm_imx355_ultra_china.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_ofilm_imx355_ultra_global.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_ofilm_imx355_ultra_global.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_ofilm_imx355_ultra_india.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_ofilm_imx355_ultra_india.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_ofilm_imx582_wide_china.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_ofilm_imx582_wide_china.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_ofilm_imx582_wide_global.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_ofilm_imx582_wide_global.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_ofilm_imx582_wide_india.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_ofilm_imx582_wide_india.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_ofilm_ov02b1b_depth_china.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_ofilm_ov02b1b_depth_china.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_ofilm_ov02b1b_depth_global.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_ofilm_ov02b1b_depth_global.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_ofilm_ov02b1b_depth_india.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_ofilm_ov02b1b_depth_india.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_ofilm_ov13b10_front_china.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_ofilm_ov13b10_front_china.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_ofilm_ov13b10_front_global.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_ofilm_ov13b10_front_global.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_ofilm_ov13b10_front_india.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_ofilm_ov13b10_front_india.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_semco_imx582_wide_china.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_semco_imx582_wide_china.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_semco_imx582_wide_global.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_semco_imx582_wide_global.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_semco_imx582_wide_india.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_semco_imx582_wide_india.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_sunny_gc02m1_macro_china.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_sunny_gc02m1_macro_china.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_sunny_gc02m1_macro_global.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_sunny_gc02m1_macro_global.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_sunny_gc02m1_macro_india.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_sunny_gc02m1_macro_india.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_sunny_gc02m1b_depth_china.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_sunny_gc02m1b_depth_china.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_sunny_gc02m1b_depth_global.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_sunny_gc02m1b_depth_global.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_sunny_gc02m1b_depth_india.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_sunny_gc02m1b_depth_india.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_sunny_imx355_ultra_china.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_sunny_imx355_ultra_china.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_sunny_imx355_ultra_global.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_sunny_imx355_ultra_global.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_sunny_imx355_ultra_india.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_sunny_imx355_ultra_india.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_sunny_ov13b10_front_china.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_sunny_ov13b10_front_china.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_sunny_ov13b10_front_global.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_sunny_ov13b10_front_global.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.k7_sunny_ov13b10_front_india.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.k7_sunny_ov13b10_front_india.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/com.qti.tuned.liteon_imx318.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/com.qti.tuned.liteon_imx318.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.almalence.node.sr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.almalence.node.sr.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.altek.node.depurple.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.altek.node.depurple.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.altek.node.distortioncorrection.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.altek.node.distortioncorrection.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.anc.node.realtimebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.anc.node.realtimebokeh.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.arcsoft.node.bodyslim.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.bodyslim.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.arcsoft.node.capturebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.capturebokeh.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.arcsoft.node.capturefusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.capturefusion.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.arcsoft.node.deflicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.deflicker.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.arcsoft.node.distortioncorrection.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.distortioncorrection.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.arcsoft.node.hdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.hdr.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.arcsoft.node.hdrchecker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.hdrchecker.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.arcsoft.node.realtimebokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.realtimebokeh.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.arcsoft.node.skinbeautifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.skinbeautifier.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.arcsoft.node.smooth_transition.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.smooth_transition.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.arcsoft.node.superlowlight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.arcsoft.node.superlowlight.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.mi.node.aiasd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.mi.node.aiasd.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.miai.node.portraitsupernight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.miai.node.portraitsupernight.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.miai.node.supernight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.miai.node.supernight.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.camx.chiiqutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.camx.chiiqutils.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv2.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.eisv3.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.hvx.addconstant.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.hvx.addconstant.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.hvx.binning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.hvx.binning.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.node.depth.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.depth.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.node.dewarp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dewarp.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.node.dummyrtb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dummyrtb.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.node.dummysat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.dummysat.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.node.eisv2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.eisv2.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.node.eisv3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.eisv3.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.node.fcv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.fcv.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.node.gpu.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.gpu.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.node.memcpy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.memcpy.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.node.photosolid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.photosolid.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.node.remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.remosaic.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.node.stich.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.stich.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.node.swregistration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.swregistration.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.node.watermark.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.watermark.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.node.xiaomigenderage.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.node.xiaomigenderage.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.aec.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.stats.aecwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.aecwrapper.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.af.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.stats.afd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.afd.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.stats.afwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.afwrapper.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.stats.asd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.asd.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.awb.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.stats.awbwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.awbwrapper.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.stats.haf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.haf.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.stats.hafoverride.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.hafoverride.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.stats.localhistogram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.localhistogram.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlib.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibsony.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibsony.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qti.stats.pdlibwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qti.stats.pdlibwrapper.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.aec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.aec.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.af.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.awb.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.qtistatic.stats.pdlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.qtistatic.stats.pdlib.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.st.node.sr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.st.node.sr.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.vidhance.node.eis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.vidhance.node.eis.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.vidhance.stats.aec_dmbr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.vidhance.stats.aec_dmbr.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.visidon.node.clearshot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.visidon.node.clearshot.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.visidon.node.sr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.visidon.node.sr.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.xiaomi.node.mibokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.xiaomi.node.mibokeh.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.xiaomi.node.mifilter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.xiaomi.node.mifilter.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.xiaomi.node.mifragment.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.xiaomi.node.mifragment.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.xiaomi.node.mimovie.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.xiaomi.node.mimovie.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/com.xiaomi.node.misegment.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/com.xiaomi.node.misegment.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/etc/visidon_clearshot_params.xml:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/etc/visidon_clearshot_params.xml \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/libdepthmapwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/libdepthmapwrapper.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/components/libmmcamera_cac3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/components/libmmcamera_cac3.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/fdconfigpreview.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreview.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/fdconfigpreviewlite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigpreviewlite.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/fdconfigvideo.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideo.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/camera/fdconfigvideolite.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/fdconfigvideolite.bin \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/com.fingerprints.extension@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.fingerprints.extension@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.dpm.api@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@2.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@2.1.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/com.qualcomm.qti.imscmservice@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.imscmservice@2.2.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/com.qualcomm.qti.uceservice@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.uceservice@2.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/com.qualcomm.qti.uceservice@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.uceservice@2.1.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/com.qualcomm.qti.uceservice@2.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/com.qualcomm.qti.uceservice@2.2.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/deviceInfoServiceModule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/deviceInfoServiceModule.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/eglSubDriverAndroid.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/egl/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libEGL_adreno.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/egl/libGLESv1_CM_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv1_CM_adreno.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/egl/libGLESv2_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLESv2_adreno.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/egl/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_adreno.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/egl/libq3dtools_esx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libq3dtools_esx.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/ftm_fm_lib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ftm_fm_lib.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.1-impl-qti.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/android.hardware.health@2.0-impl-2.1-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.health@2.0-impl-2.1-qti.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.keymaster@3.0-impl-qti.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/audio.primary.sm6150.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.sm6150.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/camera.qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/camera.qcom.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/com.dsi.ant@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.dsi.ant@1.0-impl.so \
-    vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/consumerir.sm6150.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/consumerir.sm6150.so \
-    vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/fingerprint.fpc.sm6150.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.fpc.sm6150.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/com.qti.chi.override.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/com.qti.chi.override.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/fingerprint.fpc.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.fpc.default.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/sound_trigger.primary.sm6150.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.sm6150.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.esepowermanager@1.1-impl.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.gnss@4.0-impl.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.alarm@1.0-impl.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so \
-    vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.hardware.soter@1.0-impl.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/hw/vulkan.adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.adreno.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/lib-imscmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imscmservice.so \
@@ -631,54 +1449,142 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/lib-rtpsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-rtpsl.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/lib-siputility.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-siputility.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/lib-uceservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-uceservice.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libAlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAlacSwDec.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libApeSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libApeSwDec.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libC2D2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libC2D2.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libCB.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCB.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libEGL_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libEGL_adreno.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libFaceGrade.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFaceGrade.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libFlacSwDec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFlacSwDec.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libGLESv2_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGLESv2_adreno.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libGPQTEEC_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPQTEEC_vendor.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libGPTEE_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPTEE_vendor.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libGPreqcancel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libGPreqcancel_svc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libGPreqcancel_svc.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libHalSuperSensorServer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libHalSuperSensorServer.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libI420colorconvert.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libI420colorconvert.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libMegviiFacepp-0.5.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMegviiFacepp-0.5.2.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libMpeg4SwEncoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libMpeg4SwEncoder.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libQSEEComAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQSEEComAPI.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libQTEEConnector_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libQTEEConnector_vendor.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libSNPE.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSNPE.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libSecureUILib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSecureUILib.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libStDrvInt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libStDrvInt.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libSuperSensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSuperSensor.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libSuperSensorCPU.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSuperSensorCPU.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libVDClearShot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVDClearShot.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libVDSuperPhotoAPI.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVDSuperPhotoAPI.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libVkLayer_q3dtools.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVkLayer_q3dtools.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libXMFD_AgeGender.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libXMFD_AgeGender.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/lib_denoiser3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_denoiser3.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libacdb-fts.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdb-fts.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libacdbloader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbloader.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libacdbrtac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdbrtac.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libadiertac.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadiertac.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libadreno_app_profiles.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadreno_app_profiles.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libadreno_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadreno_utils.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libadsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsp_default_listener.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libadsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadsprpc.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libalCFR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalCFR.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libalLDC.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalLDC.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libalhLDC.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libalhLDC.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libaoa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaoa.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libarcsoft_beautyshot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_beautyshot.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libarcsoft_bodyslim.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_bodyslim.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libarcsoft_distortion_correction.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_distortion_correction.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libarcsoft_dualcam_image_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_image_optical_zoom.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libarcsoft_dualcam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_optical_zoom_control.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libarcsoft_dualcam_refocus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_front.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_front.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_rear_t.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_rear_t.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libarcsoft_dualcam_refocus_rear_w.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_dualcam_refocus_rear_w.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libarcsoft_portrait_lighting.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_portrait_lighting.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libarcsoft_portrait_lighting_c.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_portrait_lighting_c.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libarcsoft_preview_deflicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_preview_deflicker.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libarcsoft_supernight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libarcsoft_supernight.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libaudcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudcal.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libaudio_log_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaudio_log_utils.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libbase64.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbase64.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libbatching.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbatching.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libbeauty_face_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbeauty_face_interface.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libbtnv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbtnv.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libc++_shared.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc++_shared.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libc2d30_bltlib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libc2d30_bltlib.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libcacertclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcacertclient.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libcamera_dirty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_dirty.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libcamera_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_nn_stub.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libcamera_scene.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera_scene.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libcamxfdalgov7.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdalgov7.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libcamxfdalgov8.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdalgov8.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libcamxfdengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxfdengine.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libcamxstatscore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxstatscore.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libcamxswprocessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxswprocessalgo.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libcamxtintlessalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamxtintlessalgo.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libcapiv2svacnn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2svacnn.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libcapiv2vop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapiv2vop.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libcdfw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdfw.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libcdfw_remote_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdfw_remote_api.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libcdsp_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsp_default_listener.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libcdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcdsprpc.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libcne.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcne.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libcneapiclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneapiclient.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libcneoplookup.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneoplookup.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libcneqmiutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcneqmiutils.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libcom.qti.chinodeutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcom.qti.chinodeutils.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libconfigdb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libconfigdb.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libcpion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcpion.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libdataitems.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdataitems.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libdiag.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdiag.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libdisp-aba.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisp-aba.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libdisplayqos.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdisplayqos.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libdng_sdk2vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdng_sdk2vendor.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libdpmqmihal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpmqmihal.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libdrmfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmfs.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libdrmtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdrmtime.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libdsi_netctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsi_netctrl.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libdsutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdsutils.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libfastcvdsp_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvdsp_stub.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libfastcvopt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastcvopt.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libfastrpc_utf_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfastrpc_utf_stub.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libft2vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libft2vendor.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libgarden.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libgarden_haltests_e2e.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgarden_haltests_e2e.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libgcs-calwrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs-calwrapper.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libgcs-ipc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs-ipc.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libgcs-osal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs-osal.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libgcs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgcs.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libgdtap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgdtap.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libgeofencing.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgeofencing.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libgnss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgnss.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libgnsspps.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgnsspps.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libgps.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgps.utils.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpudataproducer.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libgsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgsl.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libhbtpclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhbtpclient.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libhbtpdsp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhbtpdsp.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libhbtpfrmwk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhbtpfrmwk.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libhdcp1prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp1prov.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libhdcp2p2prov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcp2p2prov.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libhdcpsrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdcpsrm.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libhdr_tm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhdr_tm.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libhexagon_nn_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhexagon_nn_stub.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libhta_hexagon_runtime.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhta_hexagon_runtime.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libidl.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libizat_client_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_client_api.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libizat_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libizat_core.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libjnihelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libjnihelper.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libkeymasterdeviceutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterdeviceutils.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libkeymasterprovision.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterprovision.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libkeymasterutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkeymasterutils.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/liblbs_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblbs_core.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/liblistensoundmodel2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblistensoundmodel2.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libllvm-glnext.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-glnext.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libllvm-qcom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libllvm-qcom.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libloc_api_v02.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_api_v02.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libloc_core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_core.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libloc_socket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloc_socket.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/liblocation_api.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocation_api.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/liblocationservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocationservice.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/liblocationservice_glue.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblocationservice_glue.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/liblowi_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblowi_client.so \
@@ -686,9 +1592,26 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/liblqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblqe.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libmdmdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdmdetect.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libmdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmdsprpc.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libmegface.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmegface.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libmiai_portraitsupernight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiai_portraitsupernight.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libmiai_supernight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiai_supernight.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libmialgo_basic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_basic.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libmialgo_fs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_fs.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libmialgo_rfs.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_rfs.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libmialgo_sd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_sd.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libmialgo_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgo_utils.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libmialgoengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmialgoengine.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libmibokeh_712.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmibokeh_712.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libminkdescriptor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminkdescriptor.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libminksocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminksocket.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libmiracast.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmiracast.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libmlipay.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmlipay.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libmlipay@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmlipay@1.1.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libmm-color-convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-color-convertor.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libmm-hdcpmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmm-hdcpmgr.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libmmosal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmosal.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libmpbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmpbase.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libmulawdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmulawdec.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libnetmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libnetmgr_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_common.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libnetmgr_nr_fusion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnetmgr_nr_fusion.so \
@@ -700,12 +1623,16 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libpdmapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdmapper.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libpdnotifier.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpdnotifier.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libperipheral_client.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperipheral_client.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libpvr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpvr.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libq3dtools_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libq3dtools_adreno.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libqcbor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcbor.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libqcc_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcc_file_agent.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libqcci_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcci_legacy.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libqcmaputils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcmaputils.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libqcrilFramework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrilFramework.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libqcrildatactl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqcrildatactl.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libqdi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdi.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libqdma_file_agent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdma_file_agent.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libqdp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqdp.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libqisl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqisl.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libqmi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi.so \
@@ -714,17 +1641,33 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libqmi_client_qmux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_client_qmux.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libqmi_common_so.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_common_so.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libqmi_csi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_csi.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libqmi_csvt_srvc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_csvt_srvc.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libqmi_encdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_encdec.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libqmi_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmi_legacy.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqmiservices.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libqrtr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqrtr.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libqseed3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqseed3.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libqsocket.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqsocket.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libqtigef.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtigef.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libqtikeymaster4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libqtikeymaster4.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/librcc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librcc.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libremosaic_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaic_wrapper.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libremosaiclib.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaiclib.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libril-qc-hal-qmi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-hal-qmi.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libril-qc-logger.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-logger.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libril-qc-ltedirectdisc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-ltedirectdisc.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libril-qc-radioconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qc-radioconfig.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libril-qcril-hook-oem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libril-qcril-hook-oem.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/librilqmiservices.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librilqmiservices.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/librmp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librmp.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/librpmb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librpmb.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/librs_adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/librs_adreno.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libscveCommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libscveCommon_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveCommon_stub.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libscveObjectSegmentation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectSegmentation.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libscveObjectSegmentation_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectSegmentation_stub.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libscveObjectTracker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libscveObjectTracker_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libscveObjectTracker_stub.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libsdedrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdedrm.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libsdm-color.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-color.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libsdm-colormgr-algo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-colormgr-algo.so \
@@ -732,35 +1675,82 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libsdm-disp-vndapis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdm-disp-vndapis.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libsdmextension.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdmextension.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libsdsprpc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsdsprpc.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libsecureui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libsecureui_svcsock.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsecureui_svcsock.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libsensorcal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorcal.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libsensorslog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsensorslog.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libsettings.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsettings.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libsi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsi.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libslimclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libslimclient.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libsnpe_dsp_domains_v2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnpe_dsp_domains_v2.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libsns_device_mode_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_device_mode_stub.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libsns_fastRPC_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_fastRPC_util.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libsns_low_lat_stream_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_low_lat_stream_stub.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libsns_registry_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsns_registry_skel.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libsnsapi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsapi.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libsnsdiaglog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsnsdiaglog.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libssc_default_listener.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssc_default_listener.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libssd.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssd.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libssrec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssrec.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libsubsystem_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsubsystem_control.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libswregistrationalgo.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswregistrationalgo.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libswvdec.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libswvdec.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libsysmon_cdsp_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysmon_cdsp_skel.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libsystem_health_mon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsystem_health_mon.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libthermalclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libthermalclient.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libtime_genoff.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtime_genoff.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libtinyxml2_1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtinyxml2_1.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libtriplecam_optical_zoom_control.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_optical_zoom_control.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libtriplecam_video_optical_zoom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtriplecam_video_optical_zoom.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libtrustedapploader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrustedapploader.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libtzdrmgenprov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtzdrmgenprov.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libvideofilter_only.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvideofilter_only.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libvidhance.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvidhance.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libvppclient.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvppclient.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libvpphvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpphvx.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libvppimmotion.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvppimmotion.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libvpplibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpplibrary.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libvpptestutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvpptestutils.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libwfddisplayconfig_proprietary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfddisplayconfig_proprietary.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libwfdhdcpcp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwfdhdcpcp.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libwms.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwms.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libwqe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwqe.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/libxmi_high_dynamic_range.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxmi_high_dynamic_range.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libxml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxml.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/libxtadapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libxtadapter.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/qcrild_librilutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qcrild_librilutils.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/qtibus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtibus.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/qtimutex.so:$(TARGET_COPY_OUT_VENDOR)/lib64/qtimutex.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/rfsa/adsp/libsns_device_mode_skel.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/sensors.elliptic@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.elliptic@2.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/sensors.ssc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.ssc.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/sensors.touch.detect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/sensors.touch.detect.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/soundfx/libasphere.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libasphere.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/soundfx/libqcbassboost.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcbassboost.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/soundfx/libqcreverb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcreverb.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/soundfx/libqcvirt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libqcvirt.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/soundfx/libshoebox.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libshoebox.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/unnhal-acc-adreno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-adreno.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/unnhal-acc-common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-common.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/unnhal-acc-hta.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-hta.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/unnhal-acc-hvx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/unnhal-acc-hvx.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.display.color@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.display.color@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.1.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.display.color@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.2.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.display.color@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.3.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.display.color@1.4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.4.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.display.color@1.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.color@1.5.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.display.postproc@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.display.postproc@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.factory@2.1.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.data.mwqem@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.mwqem@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.data.slm@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.esepowermanager@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.esepowermanager@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.esepowermanager@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.esepowermanager@1.1.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.gnss@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.gnss@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@1.1.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.gnss@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.gnss@1.2.so \
@@ -772,7 +1762,6 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.alarm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.alarm@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so \
-    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.cacert@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.cacert@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.cne.internal.server@1.0.so \
@@ -783,9 +1772,17 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.data.latency@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.latency@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.data.qmi@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.data.qmi@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.dsp@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.dsp@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.fingerprint@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fingerprint@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.fm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.fm@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0-service.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.improvetouch.touchcompanion@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccsyshal@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qccvndhal@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.qseecom@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qseecom@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.qteeconnector@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.radio.am@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.am@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims@1.1.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.radio.ims@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.ims@1.2.so \
@@ -809,44 +1806,107 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.scve.objecttracker@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.scve.panorama@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.scve.panorama@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.sigma_miracast@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.sigma_miracast@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.slmadapter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.slmadapter@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.soter@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.soter@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.1.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.2.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.vpp@1.3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.vpp@1.3.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.wifi.keystore@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifi.keystore@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.callcapability@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.callinfo@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.ims.factory@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.factory@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.ims.rcsconfig@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.rcsconfig@1.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.ims.rcsconfig@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.rcsconfig@1.1.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.rcsconfig@2.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.ims.rcsconfig@2.1.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.imsrtpservice@3.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.imsrtpservice@3.0.so \
     vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.qti.latency@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.qti.latency@2.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.xiaomi.hardware.mlipay@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.mlipay@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.xiaomi.hardware.mlipay@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.mlipay@1.1.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.mtdservice@1.0.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.mtdservice@1.1.so \
+    vendor/xiaomi/mojito/proprietary/vendor/lib64/vendor.xiaomi.hardware.mtdservice@1.2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.xiaomi.hardware.mtdservice@1.2.so \
     vendor/xiaomi/mojito/proprietary/vendor/radio/qcril_database/qcril.db:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/qcril.db \
     vendor/xiaomi/mojito/proprietary/vendor/radio/qcril_database/upgrade/0_initial.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/0_initial.sql \
+    vendor/xiaomi/mojito/proprietary/vendor/radio/qcril_database/upgrade/10_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/10_version_update_ecc_table.sql \
+    vendor/xiaomi/mojito/proprietary/vendor/radio/qcril_database/upgrade/11_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/11_version_update_ecc_table.sql \
+    vendor/xiaomi/mojito/proprietary/vendor/radio/qcril_database/upgrade/12_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/12_version_update_ecc_table.sql \
+    vendor/xiaomi/mojito/proprietary/vendor/radio/qcril_database/upgrade/13_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/13_version_update_ecc_table.sql \
     vendor/xiaomi/mojito/proprietary/vendor/radio/qcril_database/upgrade/1_version_intro.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/1_version_intro.sql \
     vendor/xiaomi/mojito/proprietary/vendor/radio/qcril_database/upgrade/2_version_add_wps_config.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/2_version_add_wps_config.sql \
     vendor/xiaomi/mojito/proprietary/vendor/radio/qcril_database/upgrade/3_version_update_wps_config.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/3_version_update_wps_config.sql \
     vendor/xiaomi/mojito/proprietary/vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/4_version_update_ecc_table.sql \
     vendor/xiaomi/mojito/proprietary/vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/5_version_update_ecc_table.sql \
     vendor/xiaomi/mojito/proprietary/vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/6_version_update_ecc_table.sql \
-    vendor/xiaomi/mojito/proprietary/vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
+    vendor/xiaomi/mojito/proprietary/vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/7_version_update_ecc_table.sql \
+    vendor/xiaomi/mojito/proprietary/vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/8_version_update_ecc_table.sql \
+    vendor/xiaomi/mojito/proprietary/vendor/radio/qcril_database/upgrade/9_version_update_ecc_table_127531.sql:$(TARGET_COPY_OUT_VENDOR)/radio/qcril_database/upgrade/9_version_update_ecc_table_127531.sql
 
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.fm@1.0 \
     SoterService \
-    CACertService \
     CneApp \
     IWlanService \
     TimeService \
+    com.qualcomm.qti.gpudrivers.sm6150.api30 \
+    com.qualcomm.qti.improvetouch.service \
     PowerOffAlarm \
     QtiTelephonyService \
+    datastatusnotification \
+    embms \
     WfdService \
-    dpmserviceapp \
     ims \
     qcrilmsgtunnel \
-    seccamservice \
     WfdCommon \
-    manifest_android.hardware.drm@1.3-service.widevine \
+    tcmclient \
+    com.fingerprints.extension \
+    com.qti.dpmframework \
+    com.qti.location.sdk \
+    com.qualcomm.qti.imscmservice-V2.0-java \
+    com.qualcomm.qti.imscmservice-V2.1-java \
+    com.qualcomm.qti.imscmservice-V2.2-java \
+    com.qualcomm.qti.uceservice-V2.0-java \
+    com.qualcomm.qti.uceservice-V2.1-java \
+    com.qualcomm.qti.uceservice-V2.2-java \
+    com.quicinc.cne.api-V1.0-java \
+    com.quicinc.cne.api-V1.1-java \
+    com.quicinc.cne.constants-V1.0-java \
+    com.quicinc.cne.constants-V2.0-java \
+    com.quicinc.cne.constants-V2.1-java \
+    dpmapi \
+    embmslibrary \
+    izat.xt.srv \
+    qcrilhook \
+    vendor.qti.data.factory-V1.0-java \
+    vendor.qti.data.factory-V2.0-java \
+    vendor.qti.data.factory-V2.1-java \
+    vendor.qti.data.mwqem-V1.0-java \
+    vendor.qti.data.slm-V1.0-java \
+    vendor.qti.hardware.data.cne.internal.api-V1.0-java \
+    vendor.qti.hardware.data.cne.internal.constants-V1.0-java \
+    vendor.qti.hardware.data.cne.internal.server-V1.0-java \
+    vendor.qti.hardware.data.connection-V1.0-java \
+    vendor.qti.hardware.data.connection-V1.1-java \
+    vendor.qti.hardware.data.dynamicdds-V1.0-java \
+    vendor.qti.hardware.data.iwlan-V1.0-java \
+    vendor.qti.hardware.data.qmi-V1.0-java \
+    vendor.qti.hardware.fingerprint-V1.0-java \
+    vendor.qti.ims.callcapability-V1.0-java \
+    vendor.qti.ims.callinfo-V1.0-java \
+    vendor.qti.ims.factory-V1.0-java \
+    vendor.qti.ims.factory-V1.1-java \
+    vendor.qti.ims.rcsconfig-V1.0-java \
+    vendor.qti.ims.rcsconfig-V1.1-java \
+    vendor.qti.ims.rcsconfig-V2.0-java \
+    vendor.qti.ims.rcsconfig-V2.1-java \
+    android.hardware.gnss@2.1-service-qti \
+    android.hardware.neuralnetworks@1.3-service-qti-hta \
+    android.hardware.neuralnetworks@1.3-service-qti \
+    manifest_vendor.xiaomi.hardware.mlipay \
     vendor.qti.gnss@4.0-service
